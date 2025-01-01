@@ -1,0 +1,27 @@
+/* External Style for IDs */
+#external-color {
+    color: green;
+    font-size: 18px;
+}
+
+#external-id {
+    color: darkblue;
+    font-size: 20px;
+}
+
+/* External Style for Classes */
+.external-color {
+    color: purple;
+    font-style: italic;
+}
+
+.external-class {
+    color: brown;
+    font-weight: bold;
+}
+
+/* Generic element styles */
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}

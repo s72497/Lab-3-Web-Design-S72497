@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css"> <!-- Correct path to the CSS file -->
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Examples</title>
+    <!-- External Style -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Embedded Style -->
+    <style>
+        #embedded-color {
+            color: blue;
+        }
+
+        .embedded-color {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="embedded-color">This is styled using embedded CSS (id)</h1>
+    <p class="embedded-color">This is styled using embedded CSS (class)</p>
+    <p class="external-color">This is styled using external CSS (class)</p>
+    <p id="external-color">This is styled using external CSS (id)</p>
+    <p style="color: rgb(255, 0, 0);">This is styled using inline CSS</p>
+</body>
+</html>

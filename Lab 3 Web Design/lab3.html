@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Inline Calculator</title>
+    <style>
+        /* Styling for the header, footer, and main content sections */
+        #header, #footer {
+            background-color: #1356d3a1;
+            padding: 10px;
+            text-align: center;
+        }
+        #content {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section (Using Block and Inline Elements) -->
+    <div id="header">
+        <h1>Contact Us Form</h1>
+        <span>Customer Always Right?</span>
+    </div>
+
+    <!-- Content Section -->
+    <div id="content">
+        <!-- Contact Form -->
+        <form>
+            <!-- HTML5 Form Elements -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="contact-date">Preferred Contact Date:</label>
+            <input type="date" id="contact-date" name="contact-date"><br><br>
+
+            <label for="satisfaction">Satisfaction Level:</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Inline Calculator (Using <output> Element) -->
+        <div>
+            <h2>Simple Calculator</h2>
+            <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+                <input id="num1" type="number" value="0" placeholder="Enter first number"> +
+                <input id="num2" type="number" value="0" placeholder="Enter second number"> =
+                <output name="result" for="num1 num2"></output>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section (Using HTML Entity) -->
+    <div id="footer">
+        <p>&copy; 2024 Shafiq Irfan's Website.</p>
+    </div>
+</body>
+</html>
+
+
